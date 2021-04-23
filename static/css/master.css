@@ -1,12 +1,16 @@
 /* Universal */
-body
+
+/*Keep in mind that since this master file is linked
+to all current html files, any changes to do with mobile
+adaptation should affect all pages.*/
+
+body /*The general rules for how the body of each page works*/
 {
   margin: 0% !important;
   padding: 0% !important;
   font-family: 'Poppins', sans-serif !important;
   background-color: #f8f8ff !important;
   overflow-x: hidden;
-  /* min-width:500px; */
 }
 
 #navbar
@@ -14,7 +18,7 @@ body
   width: 100%;
   position: fixed;
 }
-#navbar .nav-link
+#navbar .nav-link /*Rules for the links present on the navbar*/
 {
   font-size: 1.5rem;
   color: white;
@@ -24,7 +28,7 @@ body
 {
   color: rgb(97, 158, 255);
 }
-.nav-link-active
+.nav-link-active /*Rules for when the links are clicked*/
 {
   color: rgb(97, 158, 255);
 }
@@ -34,7 +38,7 @@ body
   /* height: 100%; */
   padding-left: 1%; /*remove if looking wierd*/
 }
-.titleHolder
+.titleHolder /*The container for the title words on the landing page*/
 {
   display: flex;
   justify-content: center;
@@ -46,7 +50,7 @@ body
   /* font-weight: bold; */
   color: white;
 }
-.page-title-desc
+.page-title-desc /*The description "We make websites...etc"*/
 {
   font-size: 1.5rem;
   color: #ededed;
@@ -72,7 +76,7 @@ body
     border-color:rgba(97, 158, 255,1) !important;
 }
 
-.imageCollageParalax
+.imageCollageParalax /*The container for the cool icons on the landing page, I think*/
 {
   position: relative;
   width: 100%;
@@ -91,7 +95,7 @@ body
   height: 100%;
 }
 
-.toggleBtn
+.toggleBtn /*What is this? I thought toggleBtn only appeared with mobile viewports.*/
 {
   z-index: 2;
   margin: 50px;
@@ -309,9 +313,6 @@ the navbar seperates from the left*/
   animation: animate 1.5s linear infinite;
 }
 
-@media screen and (max-width: 1400px;)
-{
-
 @keyframes animate {
   0%{
     opacity: 0%;
@@ -341,7 +342,6 @@ the navbar seperates from the left*/
   animation-delay: -0.2s;
   transform: translate(0px,40px) rotate(45deg);
 }
-
 /* Projects part from project window */
 .project
 {}
